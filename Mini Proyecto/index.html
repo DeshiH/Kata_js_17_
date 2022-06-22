@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJERO CON INTERFAZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main class="inicio" id="inicio">
+        <h1>CAJERO ATM</h1>
+        <label class="Usuario" for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario">
+        <label for="contrasenia">Contraseña</label>
+        <input type="text" name="contrasenia" id="contrasenia">
+        <button onclick="ingresar()">Ingresar</button>
+    </main>
+
+    <img src="../Proyecto/ATM_Screen (1).png" alt="">
+    <div class="acciones" id="acciones">
+        <h2>Bienvenidx <span id="nombre-usuario"></span></h2>
+        <p id="info">...</p>
+        <button id="consultar">Consultar saldo</button>
+        <p id="info1"></p>
+        <input type="text" id="retiro">
+        <button id="retirar">Hacer un retiro</button>
+        <p id="info2"></p>
+        <input type="text" id="depositar">
+        <button id="deposito">Hacer un depósito</button>
+        <!-- <p id="salir">...</p> -->
+        <!-- <button onclick="salida()">salir</button>
+        <input type="text" name="tipo_de_dato" id="cajero"> -->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
