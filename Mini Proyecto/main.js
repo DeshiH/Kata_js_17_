@@ -107,7 +107,7 @@ function mostrarMenuHTML(posicionUsuario) {
         // mostrarMenuHTML(posicionUsuario);
         // document.getElementById('info2').innerText = 'Tu deposito es de : $' + ingreso
         alert('Tu deposito fue de: $' + ingreso)
-        document.getElementById(ingreso).style.display = "none";
+        document.getElementById('depositar').style.display = "none";
 
 
 
@@ -127,7 +127,7 @@ function mostrarMenuHTML(posicionUsuario) {
 
         alert('Tu retiro fue de: $' + retiro)
 
-        document.getElementById(retiro).style.display = "none";
+        document.getElementById('retiro').style.display = "none";
 
         // document.getElementById('info1').innerText = 'Tu retiro es de: $' + retiro
 

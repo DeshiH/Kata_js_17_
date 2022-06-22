@@ -23,6 +23,14 @@
     margin-left: 380px;
 }
 
-.inicio {
-    color: violet;
+.contrasenia1 {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: -238px;
+}
+
+.ingresar {
+    margin-left: 70px;
+    /* justify-content: space-between 20px 20px; */
+    margin-top: 20px;
 }
