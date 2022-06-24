@@ -5,9 +5,9 @@
 // Al ingresar al cajero, puedes seleccionar la cuenta con la que deseas interactuar. Deben existir al menos tres cuentas. Para esto, puedes trabajar con un arreglo de objetos como el siguiente:
 
 let cuentas = [
-    { nombre: "Hiromi", saldo: 200, password: 'helloworld' },
-    { nombre: "Luis", saldo: 290, password: 'l33t' },
-    { nombre: "Carlos", saldo: 67, password: '123' }
+    { nombre: "Ted mosby", saldo: 200, password: 'casarme' },
+    { nombre: "Barney", saldo: 290, password: 'dinero' },
+    { nombre: "Marshall", saldo: 67, password: 'lily' }
 ];
 
 // function consultarSaldo(posicionUsuario) {
@@ -36,6 +36,13 @@ let cuentas = [
 // ---------------------------------------------------------------------------
 
 // FUNCIONES NUEVAS ADAPTADAS AL DOM (HTML)
+
+
+
+// console.log(`La cuenta no puede tener menos de ${Math.min(...numeros)}`);
+// console.log(`La cuenta no puede tener mas de ${Math.max(...numeros)}`);
+
+
 
 function ingresar() {
     // Tomar datos de los inputs
@@ -101,19 +108,19 @@ function mostrarMenuHTML(posicionUsuario) {
 
 
 
+
         let ingreso = document.getElementById('depositar').value
-        ingreso = Number(ingreso)
-        cuentas[posicionUsuario].saldo = cuentas[posicionUsuario].saldo + ingreso;
-        // mostrarMenuHTML(posicionUsuario);
-        // document.getElementById('info2').innerText = 'Tu deposito es de : $' + ingreso
-        alert('Tu deposito fue de: $' + ingreso)
-        document.getElementById('depositar').style.display = "none";
-
-
-
-
-
-
+        ingreso = Number(ingreso); {
+            if (cuentas[posicionUsuario].saldo + ingreso > 990) {
+                alert('ERROR - No se puede tener mas de 990');
+                return
+            } else {
+                cuentas[posicionUsuario].saldo = cuentas[posicionUsuario].saldo + ingreso;
+                alert('Tu deposito fue de: $' + ingreso);
+                document.getElementById('depositar').style.display = "none";
+                return
+            }
+        }
     });
 
 
@@ -122,58 +129,20 @@ function mostrarMenuHTML(posicionUsuario) {
     document.getElementById("retirar").addEventListener('click', function() {
 
         let retiro = document.getElementById('retiro').value
-        retiro = Number(retiro)
-        cuentas[posicionUsuario].saldo = cuentas[posicionUsuario].saldo - retiro;
+        retiro = Number(retiro); {
 
-        alert('Tu retiro fue de: $' + retiro)
+            if (cuentas[posicionUsuario].saldo - retiro < 10) {
+                alert('ERROR - No puedes tener menos de 10');
+                return
+            } else {
 
-        document.getElementById('retiro').style.display = "none";
+                cuentas[posicionUsuario].saldo = cuentas[posicionUsuario].saldo - retiro;
 
-        // document.getElementById('info1').innerText = 'Tu retiro es de: $' + retiro
+                alert('Tu retiro fue de: $' + retiro)
 
-        // alert('El saldo actual es de: $' + cuentas[posicionUsuario].saldo)
-
-        // document.getElementById("info1").innerText = 'Cuanto quieres retirar' + cuentas[posicionUsuario].saldo - retiro;
-
+                document.getElementById('retiro').style.display = "none";
+                return
+            }
+        }
     });
-
-
-
-    // document.getElementById('salida').addEventListener('click', function() {
-    //     document.getElementById("salir").style.display = "exit";
-    //     return exit
-    // });
-
-
 }
-
-
-// function retirarSaldoHTML(posicionUsuario) {
-//     document.getElementById('retiro').addEventListener('click', function() {
-
-//         // // mostrarMenuHTML(posicionUsuario);
-//         document.getElementById("info1").innerText = 'Cuanto quieres retirar' + retiro;
-//         alert("Escribe cuánto quieres retirar:")
-//         retiro = Number(retiro);
-//         cuentas[posicionUsuario].saldo = cuentas[posicionUsuario].saldo - retiro;
-
-
-//     })
-
-
-
-// En lugar de usar esta función se construyó con un addEventListener 
-// function consultarSaldoHTML(posicionUsuario) {
-//     alert('El saldo actual es de: $' + cuentas[posicionUsuario].saldo);
-// }
-
-// function retirarSaldoHTML(posicionUsuario) {
-//     // Limpiar el texto info
-//     document.getElementById("info1").innerText = '';
-//     alert('retirar de saldo');
-// }
-
-// function ingresarSaldoHTML(posicionUsuario) {
-//     document.getElementById('info2').innerText = '';
-//     alert('ingresar de saldo');
-// }
