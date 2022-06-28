@@ -1,0 +1,159 @@
+// document['piedra'].src = "./piedra.jpeg";
+// document['papel'].src = "./papel.jpeg";
+// document['tijera'].src = "./tijeras.jpeg";
+
+// document.getElementById('tijera').src = "./tijeras.jpeg";
+// document.getElementById('papel').src = "./papel.jpeg";
+// document.getElementById('piedra').src = "./piedra.jpeg";
+
+
+
+// let manos = [
+//     { usuario: "piedra" },
+//     { usuario: "papel" },
+//     { usuario: "tijera" }
+// ];
+
+
+
+// // function random() {
+// //     for (let i = 0; i < manos.length; i++)
+// //         if (manos[usuario](i).lenght = onclick = seleccionar)
+// //             document.getElementById('opcion-cpu') = 'none';
+// // }
+
+
+
+
+
+
+// function rand(n) {
+//     return (Math.floor(Math.random() * n + 1));
+// }
+
+// let cambia_imagen = Array();
+// cambiar_imagen[0] = './papel.jpeg';
+// cambiar_imagen[1] = './tijeras.jpeg';
+// cambiar_imagen[2] = './piedra.jpeg';
+
+// function seleccionar(cambia_imagen) {
+//     document.getElementById('opcion').addEventListener('click', function() {
+
+//         document.getElementById('opcion-cpu').src = cambia_imagen[rand(3) - 1]; {
+
+
+//             if (manos == 0) { //el usuario eligio piedra 
+//                 if (opciones[manos] == 1) { //si la maquina eligio papel 
+//                     document.getElementById('opcion-cpu').innerHTML = '<h1>¡Perdiste!</h1> <h3>La maquina eligio papel y tu piedra.</h3>';
+//                 } else {
+//                     if (opciones[manos] == 2) {
+//                         document.getElementById('opcion-cpu').innerHTML = '<h1>¡Ganaste!</h1> <h3>La maquina eligio tijera y tu piedra.</h3>';
+//                     } else {
+//                         if (opciones[manos] == 0) {
+//                             document.getElementById('opcion-cpu').innerHTML = '<h1>¡Empate!</h1> <h3>Ambos eligieron piedra.</h3>';
+//                         }
+//                     }
+//                 }
+//             }
+
+//             if (manos == 1) { //el usuario eligio papel 
+//                 if (opciones[manos] == 2) {
+//                     document.getElementById('opcion-cpu').innerHTML = '<h1>¡Perdiste!</h1> <h3>La maquina eligio tijera y tu papel.</h3>';
+//                 } else {
+//                     if (opciones[manos] == 0) {
+//                         document.getElementById('opcion-cpu').innerHTML = '<h1>¡Ganaste!</h1> <h3>La maquina eligio piedra y tu papel.</h3>';
+
+//                     } else {
+//                         if (opciones[manos] == 1) {
+//                             document.getElementById('opcion-cpu').innerHTML = '<h1>¡Empate!</h1> <h3>Ambos eligieron papel.</h3>';
+//                         }
+//                     }
+//                 }
+//             }
+
+//             if (manos == 2) { //el usuario eligio tijera 
+//                 if (opciones[manos] == 1) {
+//                     document.getElementById('opcion-cpu').innerHTML = '<h1>¡Ganaste!</h1> <h3>La maquina eligio papel y tu tijera.</h3>';
+
+//                 } else {
+//                     if (opciones[manos] == 0) {
+//                         document.getElementById('opcion-cpu').innerHTML = '<h1>¡Perdiste!</h1> <h3>La maquina eligio piedra y tu tijera.</h3>';
+//                     } else {
+//                         if (opciones[manos] == 2) {
+//                             document.getElementById('opcion-cpu').innerHTML = '<h1>¡Empate!</h1> <h3>Ambos eligieron tijera.</h3>';
+//                         }
+//                     }
+//                 }
+//             }
+
+//             document.getElementById('opcion-cpu').style.display = "none";
+
+//         }
+//     });
+// };
+
+// var opciones = ["piedra", "papel", "tijera"];
+// var opciones = [0, 1, 2];
+// var eleccionMaquina;
+
+// function aleatorio(minimo, maximo) {
+//     var numero = Math.floor(Math.random() * (maximo - minimo + 1) + minimo);
+//     return numero;
+// }
+
+// function seleccionar(eleccionUsuario) {
+//     eleccionUsuario = parseInt(eleccionUsuario);
+//     eleccionMaquina = aleatorio(0, 2);
+// }
+
+
+// function cambiarImagenJS() {
+//     document.getElementById("opcion-cpu").src = "./papel.jpeg";
+// }
+
+//así con jQuery
+//haciendo uso de la función attr()
+// function cambiarImagenjQ() {
+//     $("#seleccionar").attr("src", "./papel.jpeg");
+// }
+
+// document.getElementById('piedra').addEventListener('click', function() {
+//     document.getElementById('opcion-cpu').click
+// });
+
+// function seleccionar(){
+//     let image= document.getElementById('papel');
+//     if (image.src.match)
+// }
+// let cambia_imagen = [
+//     { imagen: '../Proyecto_2_Juego/papel.jpeg' },
+//     { imagen: '../Proyecto_2_Juego/piedra.jpeg' },
+//     { imagen: "../Proyecto_2_Juego/tijeras.jpeg" }
+// ];
+
+
+
+// function seleccionar() {
+//     // let image = document.getElementById('opcion-cpu');
+//     let cambia_imagen = Math.floor(Math.random() * 3);
+//     for (let i = 0; i < cambia_imagen.length; i++)
+//         if (imagen.src.match(cambia_imagen == 0)) {
+//             imagen.src = seleccionar;
+//         } else {
+
+//             imagen.src = [cambia_imagen].value;
+
+//         }
+//     if (imagen.src.match(cambia_imagen == 1)) {
+//         imagen.src = seleccionar;
+//     } else {
+//         imagen.src = (cambia_imagen).value
+//     }
+//     if document.getElemenbtById {
+//         imagensrc = seleccionar;
+//     } else {
+//         imagen.src = (cambia_imagen).value;
+//     }
+// }
+
+
